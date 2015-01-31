@@ -1,4 +1,4 @@
-package com.algorythms;
+package com.algorythms.iterators;
 
 /**
  * Created by Janek on 2015-01-26.
@@ -61,6 +61,9 @@ public class ArrayIterator implements Iterator {
 
     @Override
     public Object current() throws ArrayIndexOutOfBoundsException {
+        if (current < 0 || current > last) {
+            throw new IndexOutOfBoundsException("Not current");
+        }
         return objects[current];
     }
 }

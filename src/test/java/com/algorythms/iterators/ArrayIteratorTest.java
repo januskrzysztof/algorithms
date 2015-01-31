@@ -1,4 +1,4 @@
-package com.algorythms;
+package com.algorythms.iterators;
 
 import org.junit.Test;
 
